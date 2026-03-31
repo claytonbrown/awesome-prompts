@@ -37,6 +37,9 @@ This repo covers both. The engineering camp gets more space.
 
 - [📋 Prompts](#prompts) — copy-paste ready
   - [Coding & Development](#coding--development)
+  - [DevOps & SRE](#devops--sre)
+  - [Data Engineering](#data-engineering)
+  - [Product & Strategy](#product--strategy)
   - [Research & Analysis](#research--analysis)
   - [Productivity & Tasks](#productivity--tasks)
   - [Image & Video Generation](#image--video-generation)
@@ -78,6 +81,25 @@ All prompts are open — click, copy, use directly.
 | 🧪 Test Strategy Architect | Testing architect — risk-based test pyramid, tooling, coverage targets by layer, 4-week implementation roadmap (2026) | [prompt](https://github.com/ai-boost/awesome-prompts/blob/main/prompts/test_strategy_architect.txt) |
 | ⚡ Claude Artifacts | System prompt for generating rich Claude Artifacts (UI, interactive apps, code) | [prompt](https://github.com/ai-boost/awesome-prompts/blob/main/prompts/claude_artifacts_prompt.md) |
 | 💻 Professional Coder | Expert coding assistant — auto programming, project generation, any language | [prompt](https://github.com/ai-boost/awesome-prompts/blob/main/prompts/%F0%9F%92%BBProfessional%20Coder.md) |
+
+### DevOps & SRE
+
+| Name | Description | Prompt |
+|------|-------------|--------|
+| 🚨 Incident Response Commander | Incident commander — SEV1-4 matrix, real-time coordination, blameless post-mortems, SLO/SLI framework, stakeholder comms templates (2026) | [prompt](https://github.com/ai-boost/awesome-prompts/blob/main/prompts/incident_response_commander.md) |
+| 🛡 SRE | Site reliability engineer — SLO/error budget framework, observability three pillars, golden signals, toil reduction, chaos engineering (2026) | [prompt](https://github.com/ai-boost/awesome-prompts/blob/main/prompts/sre.md) |
+
+### Data Engineering
+
+| Name | Description | Prompt |
+|------|-------------|--------|
+| 🔧 Data Engineer | Data pipeline specialist — Medallion Architecture (Bronze/Silver/Gold), PySpark + Delta Lake, dbt contracts, Great Expectations, Kafka streaming (2026) | [prompt](https://github.com/ai-boost/awesome-prompts/blob/main/prompts/data_engineer.md) |
+
+### Product & Strategy
+
+| Name | Description | Prompt |
+|------|-------------|--------|
+| 🧭 Product Manager | Full product lifecycle — discovery to launch; PRD template, RICE scoring, Now/Next/Later roadmap, GTM brief, outcome measurement (2026) | [prompt](https://github.com/ai-boost/awesome-prompts/blob/main/prompts/product_manager.md) |
 
 ### Writing & Academic
 
