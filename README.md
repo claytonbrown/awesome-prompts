@@ -42,6 +42,7 @@ This repo covers both. The engineering camp gets more space.
   - [Product & Strategy](#product--strategy)
   - [Research & Analysis](#research--analysis)
   - [Productivity & Tasks](#productivity--tasks)
+  - [Safety & Compliance](#safety--compliance)
   - [Image & Video Generation](#image--video-generation)
   - [Legacy (2023 era)](#legacy-2023-era--kept-for-reference)
 - [🔬 Frameworks](#frameworks) — the engineering camp
@@ -135,6 +136,12 @@ All prompts are open — click, copy, use directly.
 |------|-------------|--------|
 | ✅ GTD Productivity Assistant | Full GTD system — capture, clarify, organize, reflect, weekly review; implicit task detection (2026) | [prompt](https://github.com/ai-boost/awesome-prompts/blob/main/prompts/productivity_assistant_gtd.txt) |
 | 🎧 Customer Support Agent | Empathetic SaaS support agent — single-interaction resolution, tone calibration, escalation rules, no spin (2026) | [prompt](https://github.com/ai-boost/awesome-prompts/blob/main/prompts/customer_support_agent.txt) |
+
+### Safety & Compliance
+
+| Name | Description | Prompt |
+|------|-------------|--------|
+| 🛡 Content Moderator | CoT-based content moderation — policy-driven ALLOW/BLOCK classification with thinking trace and structured verdict (2026) | [prompt](https://github.com/ai-boost/awesome-prompts/blob/main/prompts/content_moderator.txt) |
 
 ### Meta & Prompt Engineering
 
@@ -332,6 +339,7 @@ Context engineering is the practice of designing *what* goes into an LLM's conte
 | [**DeerFlow 2.0**](https://github.com/bytedance/deer-flow) | ByteDance | Long-horizon "SuperAgent" — filesystem, sandboxed execution, persistent memory, parallel sub-agents, skill system; LangGraph-based; hit #1 GitHub Trending on launch day (Feb 28, 2026) ![](https://img.shields.io/github/stars/bytedance/deer-flow?style=flat-square) |
 | [**smolagents**](https://github.com/huggingface/smolagents) | HuggingFace | Minimal code-first agent framework (~1000 LOC core) — MCP integration, multi-agent hierarchies, multimodal I/O, 100+ model providers ![](https://img.shields.io/github/stars/huggingface/smolagents?style=flat-square) |
 | [**browser-use**](https://github.com/browser-use/browser-use) | OSS | AI-driven browser automation — agents control a real browser to complete web tasks; 89% on WebVoyager benchmark ![](https://img.shields.io/github/stars/browser-use/browser-use?style=flat-square) |
+| [**Mastra**](https://github.com/mastra-ai/mastra) | Gatsby team | TypeScript-first AI agent framework — Agent/Workflow/RAG/Evals primitives, 40+ model providers, native MCP server support (YC W25, 2026) ![](https://img.shields.io/github/stars/mastra-ai/mastra?style=flat-square) |
 
 > **Feb 2026 multi-agent wave:** In a two-week window, Claude Code Agent Teams, Windsurf parallel agents (5), Grok Build (8 agents), Codex CLI, and Devin parallel sessions all shipped simultaneously — multi-agent is now the baseline, not a feature.
 
@@ -404,12 +412,16 @@ The infrastructure layer that wraps an LLM: tool access, lifecycle management, p
 | **Anthropic** | [Claude Code Best Practices](https://www.anthropic.com/engineering/claude-code-best-practices) | Agentic Coding |
 | **Anthropic** | [Demystifying Evals for AI Agents](https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents) (Jan 2026) | Agent Evals |
 | **Anthropic** | [Quantifying Infrastructure Noise in Agentic Coding Evals](https://www.anthropic.com/engineering/infrastructure-noise) (Mar 2026) | Agent Evals |
+| **Anthropic** | [Harness Design for Long-Running Application Development](https://www.anthropic.com/engineering/harness-design-long-running-apps) (Mar 2026) | Harness Architecture |
+| **Anthropic** | [Building Agents with the Claude Agent SDK](https://claude.com/blog/building-agents-with-the-claude-agent-sdk) | Agent SDK |
+| **Anthropic** | [Eval Awareness in Claude Opus 4.6's BrowseComp Performance](https://www.anthropic.com/engineering/eval-awareness-browsecomp) (Mar 2026) | Agent Evals |
 | **OpenAI** | [GPT-4.1 Prompting Guide](https://cookbook.openai.com/examples/gpt4-1_prompting_guide) | Prompting |
 | **OpenAI** | [A Practical Guide to Building Agents](https://cdn.openai.com/business-guides-and-resources/a-practical-guide-to-building-agents.pdf) | Agents |
 | **OpenAI** | [Designing Agents to Resist Prompt Injection](https://openai.com/index/designing-agents-to-resist-prompt-injection/) (2026) | Security |
 | **Google** | [Build with Gemini Deep Research](https://blog.google/innovation-and-ai/technology/developers-tools/deep-research-agent-gemini-api/) (2026) | Research Agents |
 | **Google** | [Agents Companion Whitepaper](https://www.kaggle.com/whitepaper-agent-companion) (2026) | Agents — 76-page production playbook: multi-agent, AgentOps, agentic RAG, evals |
 | **Google** | [Gemini Prompting Best Practices](https://ai.google.dev/docs/prompt_best_practices) | Prompting |
+| **Google** | [Developer's Guide to AI Agent Protocols](https://developers.googleblog.com/developers-guide-to-ai-agent-protocols/) (Mar 2026) | Agent Protocols — MCP, A2A, UCP, AP2, A2UI, AG-UI compared |
 | **OpenAI** | [Codex CLI Prompting Guide](https://developers.openai.com/cookbook/examples/gpt-5/codex_prompting_guide) (Feb 2026) | Agentic Coding |
 | **DeepSeek** | [DeepSeek Prompt Library](https://api-docs.deepseek.com/prompt-library) | Prompting |
 | **xAI** | [Grok Code Prompt Engineering Guide](https://docs.x.ai/docs/guides/grok-code-prompt-engineering) (2026) | Agentic Coding |
@@ -449,6 +461,9 @@ The infrastructure layer that wraps an LLM: tool access, lifecycle management, p
 | [Think Deep, Not Just Long (2026)](https://arxiv.org/abs/2602.13517) | Longer CoT ≠ better reasoning — identifies "deep-thinking tokens" (high-revision tokens) as the true signal; enables cost-efficient test-time scaling | [PDF](papers/Think_Deep_Not_Just_Long_Measuring_LLM_Reasoning_Effort.pdf) |
 | [ReBalance: Efficient Reasoning with Balanced Thinking (2026)](https://arxiv.org/abs/2603.12372) | Detects overthinking/underthinking via confidence variance and applies steering vectors to redirect reasoning — ICLR 2026; works on DeepSeek-R1, QwQ, o3-class models | [PDF](papers/ReBalance_Efficient_Reasoning_with_Balanced_Thinking.pdf) |
 | [InftyThink: Breaking Length Limits of Long-Context Reasoning (2026)](https://arxiv.org/abs/2503.06692) | "Jagged" iterative reasoning — splits long reasoning into short segments with summaries, enabling unlimited depth without hitting context limits; ICLR 2026; +3–13% on MATH500/AIME24/GPQA | [PDF](papers/InftyThink_Breaking_Length_Limits_Long_Context_Reasoning.pdf) |
+| [Reasoning Models Generate Societies of Thought (2026)](https://arxiv.org/abs/2601.10825) | Google DeepMind: DeepSeek-R1/QwQ-32B superior reasoning emerges from simulating internal multi-agent dialogue — base models trained purely on reasoning accuracy spontaneously develop questioning, perspective-switching, and contradiction-resolving behaviors | [PDF](papers/Reasoning_Models_Generate_Societies_of_Thought.pdf) |
+| [Reasoning Theater: Disentangling Model Beliefs from CoT (2026)](https://arxiv.org/abs/2603.05488) | For simple tasks, the model's final answer is already decodable from early-layer activations before CoT generates a single token — CoT produces genuine belief change only on hard problems; probe-guided early-exit reduces token generation by 80% on simple tasks | [PDF](papers/Reasoning_Theater_CoT_vs_Model_Beliefs.pdf) |
+| [FLARE: Why Reasoning Fails to Plan (2026)](https://arxiv.org/abs/2601.22311) | Diagnoses root cause of LLM agent long-horizon planning failures (stepwise reasoning induces greedy policy); FLARE (Future-aware Lookahead + Reward Estimation) lets LLaMA-8B surpass GPT-4o on planning benchmarks | [PDF](papers/FLARE_Why_Reasoning_Fails_to_Plan.pdf) |
 
 ### Surveys
 
@@ -477,6 +492,8 @@ The infrastructure layer that wraps an LLM: tool access, lifecycle management, p
 | Paper | Key Contribution |
 |-------|-----------------|
 | [G2CP: Graph-Grounded Communication Protocol for Multi-Agent Reasoning (2026)](https://arxiv.org/abs/2602.13370) | Replaces free-text agent messages with explicit graph operations (traversal, subgraph fragments, updates) over a shared knowledge graph — 73% token reduction, 34% accuracy improvement, fully auditable reasoning chains | [PDF](papers/G2CP_Graph_Grounded_Multi_Agent_Communication_Protocol.pdf) |
+| [AdaptOrch: Task-Adaptive Multi-Agent Orchestration (2026)](https://arxiv.org/abs/2602.16873) | Topology selection (parallel/sequential/hierarchical/hybrid) matters more than model choice — AdaptOrch automatically picks the right topology per task; 12–23% improvement over static single-topology baselines across SWE-bench, GPQA, and RAG | [PDF](papers/AdaptOrch_Task_Adaptive_Multi_Agent_Orchestration.pdf) |
+| [The Orchestration of Multi-Agent Systems (2026)](https://arxiv.org/abs/2601.13671) | Systematic academic analysis of MCP and A2A as complementary communication protocols; enterprise-grade multi-agent orchestration architecture covering governance, observability, and organizational adoption patterns | |
 
 ### Agent Safety
 
@@ -485,6 +502,8 @@ The infrastructure layer that wraps an LLM: tool access, lifecycle management, p
 | [BeSafe-Bench: Behavioral Safety Risks of Situated Agents (2026)](https://arxiv.org/abs/2603.25747) | First benchmark across 4 real functional domains (Web, Mobile, Embodied VLM/VLA) with 9 safety-risk categories; even the best agent completes <40% of tasks under full safety constraints | [PDF](papers/BeSafe_Bench_Agent_Behavioral_Safety_Risks.pdf) |
 | [Agents of Chaos (2026)](https://arxiv.org/abs/2602.20021) | Two-week red-team study of live autonomous agents (email, Discord, shell, persistent memory) — documents 11 real attack categories including cross-agent unsafe practice propagation, identity spoofing, unauthorized resource consumption, and false task completion (32 HF likes) | [PDF](papers/Agents_of_Chaos_Red_Teaming_Autonomous_Agents.pdf) |
 | [Internal Safety Collapse in Frontier LLMs (2026)](https://arxiv.org/abs/2603.23509) | Introduces TVD framework and ISC-Bench — frontier models fail at 95.3% rate on dual-use professional tasks where capability and harm co-occur; advanced models are *more* vulnerable than earlier LLMs because their capabilities become liabilities | [PDF](papers/Internal_Safety_Collapse_Frontier_LLMs.pdf) |
+| [Jailbreaking LLMs & VLMs: Mechanisms, Evaluation, and Unified Defense (2026)](https://arxiv.org/abs/2601.03594) | First unified survey spanning both LLM and VLM jailbreak — covers template, in-context, RL, and multimodal attack types; proposes 3-layer defense framework (perception / generation / parameter layers) | [PDF](papers/Jailbreaking_LLMs_VLMs_Unified_Survey.pdf) |
+| [Attack and Defense Landscape of Agentic AI (2026)](https://arxiv.org/abs/2603.11088) | Dawn Song (UC Berkeley) et al. — first complete security survey for agentic AI systems (LLM + external tools/components); establishes threat model covering full attack surface and defense mechanisms; USENIX Security 2026 | [PDF](papers/Attack_Defense_Landscape_Agentic_AI.pdf) |
 
 ### Self-Improving Agents
 
