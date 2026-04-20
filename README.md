@@ -168,6 +168,7 @@ All prompts are open — click, copy, use directly.
 |------|-------------|--------|
 | 🏥 Clinical Assistant | Differential diagnosis generator + SOAP note writer from transcripts/notes — ICD-10/CPT coding, diagnostic workup, HIPAA-compliant (2026) | [prompt](https://github.com/ai-boost/awesome-prompts/blob/main/prompts/clinical_assistant.txt) |
 | 🏥 Healthcare AI Architect | Clinical AI system design — safety-first architecture, multi-agent clinical reasoning, evidence stratification, uncertainty communication, HIPAA/FDA compliance, MR-Bench evaluation (2026) | [prompt](https://github.com/ai-boost/awesome-prompts/blob/main/prompts/healthcare_ai_architect.txt) |
+| 🔬 Clinical Research Coordinator | Clinical trial operations — GCP compliance, protocol design, site management, patient recruitment, safety reporting, decentralized trials, data integrity (2026) | [prompt](https://github.com/ai-boost/awesome-prompts/blob/main/prompts/Clinical_Research_Coordinator.txt) |
 
 ### Legal & Compliance
 
@@ -193,6 +194,7 @@ All prompts are open — click, copy, use directly.
 | 👌 Academic Assistant Pro | Academic writing with a professorial touch — papers, citations, analysis | [prompt](https://github.com/ai-boost/awesome-prompts/blob/main/prompts/%F0%9F%91%8CAcademic%20Assistant%20Pro.md) |
 | 🖋 Literature Professor | Essay writing and literary analysis from a professor's perspective | [prompt](https://github.com/ai-boost/awesome-prompts/blob/main/prompts/Literature_Professor.md) |
 | 📝 Technical Writer | Senior dev-docs writer — Stripe/Twilio/Google standards; blog posts, API docs, release notes, READMEs; no padding (2026) | [prompt](https://github.com/ai-boost/awesome-prompts/blob/main/prompts/technical_writer.txt) |
+| 📑 Academic Peer Reviewer | Comprehensive manuscript review — contribution assessment, methodology critique, reproducibility, ethics, constructive feedback, recommendation with confidence (2026) | [prompt](https://github.com/ai-boost/awesome-prompts/blob/main/prompts/Academic_Peer_Reviewer.txt) |
 
 ### Learning & Education
 
@@ -281,6 +283,7 @@ All prompts are open — click, copy, use directly.
 |------|-------------|--------|
 | 🎮 Game Designer | Senior systems & mechanics designer — GDD authorship, core gameplay loops, economy balancing (Monte Carlo), player onboarding, behavioral economics, systemic emergence (2026) | [prompt](https://github.com/ai-boost/awesome-prompts/blob/main/prompts/game_designer.txt) |
 | 🤖 Game AI Designer | Intelligent NPC & procedural content design — behavior trees, utility AI, GOAP, director AI, LLM-powered dialogue, emergent gameplay, performance budgets (2026) | [prompt](https://github.com/ai-boost/awesome-prompts/blob/main/prompts/game_ai_designer.txt) |
+| 🏗 Game Level Designer | Spatial game design — layout topology, encounter choreography, difficulty curves, environmental storytelling, navigation, multiplayer arenas, AI-assisted iteration (2026) | [prompt](https://github.com/ai-boost/awesome-prompts/blob/main/prompts/Game_Level_Designer.txt) |
 
 ### Translation
 
@@ -691,6 +694,7 @@ The infrastructure layer that wraps an LLM: tool access, lifecycle management, p
 |-------|-----------------|
 | [Medical Reasoning with Large Language Models: A Systematic Review and Evaluation (April 2026)](https://arxiv.org/abs/2604.08559) | Comprehensive review of medical reasoning methods + MR-Bench (real-world hospital data); reveals large gap between exam-level performance and authentic clinical decision-making | [PDF](papers/Medical_Reasoning_LLM_Systematic_Review.pdf) |
 | [VeriSim: Evaluating Medical AI Under Realistic Patient Noise (April 2026)](https://arxiv.org/abs/2604.10441) | Truth-preserving patient simulation framework injecting controllable, clinically evidence-grounded noise — evaluates medical AI robustness under realistic imperfect patient data conditions | [PDF](papers/VeriSim_Medical_AI_Realistic_Patient_Noise.pdf) |
+| [Med-CAM: Minimal Evidence for Explaining Medical Decision Making (April 2026)](https://arxiv.org/abs/2604.13695) | Minimal evidence extraction for medical AI explanations — identifies the smallest subset of input features sufficient for model decisions, improving interpretability without performance loss | [PDF](papers/MedCAM_Medical_Decision_Explanation.pdf) |
 
 ### Context & Memory
 
@@ -750,6 +754,7 @@ The infrastructure layer that wraps an LLM: tool access, lifecycle management, p
 | [Graph-of-Mark: Spatial Reasoning via Visual Prompting (2026)](https://arxiv.org/abs/2603.06663) | Overlays scene graphs onto input images at the pixel level to model object relationships — up to +11 percentage points on VQA and localization across 4 datasets, zero-shot | [PDF](papers/Graph_of_Mark_Spatial_Reasoning_Multimodal_Visual_Prompting.pdf) |
 | [Look Twice: Training-Free Evidence Highlighting in MLLMs (April 2026)](https://arxiv.org/abs/2604.01280) | Inference-time framework exploiting MLLM attention patterns to identify relevant visual regions and text, then re-conditions generation on highlighted evidence — consistent VQA improvements, no training required | [PDF](papers/Look_Twice_Training_Free_Evidence_Highlighting_MLLMs.pdf) |
 | [Agentic-MME: What Agentic Capability Really Brings to Multimodal Intelligence? (April 2026)](https://arxiv.org/abs/2604.03016) | Systematic evaluation of agentic capability in multimodal LLMs — decomposes tasks into perception, reasoning, and action levels; reveals where agentic loops help vs. where they add overhead | [PDF](papers/Agentic_MME_Multimodal_Intelligence.pdf) |
+| [FeynmanBench: Diagrammatic Physics Reasoning for MLLMs (April 2026)](https://arxiv.org/abs/2604.03893) | First benchmark for Feynman diagram tasks — evaluates multistep diagrammatic reasoning requiring conservation laws, symmetry constraints, and graph topology; 2000+ tasks across Standard Model interactions | [PDF](papers/FeynmanBench_Multimodal_Physics_Reasoning.pdf) |
 
 ### Embodied AI & World Models
 
@@ -757,6 +762,7 @@ The infrastructure layer that wraps an LLM: tool access, lifecycle management, p
 |-------|-----------------|
 | [VLA-World: Vision-Language-Action World Models for Autonomous Driving (April 2026)](https://arxiv.org/abs/2604.09059) | Unifies predictive imagination with reflective reasoning for driving foresight — action-derived trajectory guides next-frame generation, then reasons over the imagined frame to refine planning | [PDF](papers/VLA_World_Vision_Language_Action_World_Models.pdf) |
 | [EmbodiedClaw: Conversational Workflow Execution for Embodied AI Development (April 2026)](https://arxiv.org/abs/2604.13800) | Conversational framework for embodied AI development — batch simulation environment synthesis, automatic scene creation, controllable scene editing, and workflow execution via natural language | [PDF](papers/EmbodiedClaw_Conversational_Workflow_Embodied_AI.pdf) |
+| [StarVLA: Lego-like Codebase for VLA Model Development (April 2026)](https://arxiv.org/abs/2604.05014) | Open-source modular VLA framework — swappable backbone (VLM/world-model) and action heads, cross-embodiment learning, unified evaluation across LIBERO, SimplerEnv, RoboTwin, RoboCasa, BEHAVIOR-1K | [PDF](papers/StarVLA_Vision_Language_Action_Codebase.pdf) |
 
 ### Voice & Realtime Agents
 
